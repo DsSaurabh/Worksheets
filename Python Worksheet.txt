@@ -1,0 +1,73 @@
+1. Which of the following is not a core datatype in python?
+B) struct
+
+2. Which of the following is an invalid variable name in python?
+C) 1_no
+
+3. Which one of the following is a keyword in python?
+A) in
+
+4. In which of the following manner are the operators of the same precedence executed in python?
+A) Left to Right
+
+5. Arrange the following in decreasing order of the precedence when they appear in an expression in python?
+i) Multiplication ii) Division iii) Exponential iv) Parentheses
+C) iv – iii – ii – i
+
+6. (28//6)**3/3%3 = ?
+A) 7.1111…
+
+7. Which of the following is not equal to x16 ?
+C) x^16
+
+8. a = input(“Enter an integer”). What will be the data type of a?
+B) str
+
+Q9 and Q10 have multiple correct answers. Choose all the correct options to answer your question.
+
+9. Which of the following statements are correct?
+A) Division and multiplication have same precedence in python
+B) Python’s operators’ precedence is based on PEDMAS
+D) In case of operators’ having same precedence, the one on the left side is executed first.
+
+10. Which of the following is(are) valid statement(s) in python?
+A) abc = 1,000,000 
+D) a_b_c = 1,000,000
+
+Q11 to Q13 are subjective questions, answer them briefly
+
+11. Differentiate between a list, tuple, set and dictionary.
+
+Answer) Lists:--> In Python list is a sequence of values called items or elements. The elements can be of any type. The list is a datatype available in python which 
+                  can be written as a list of comma seprated values (items) between square brackets []. List are mutable.
+       
+Tuple:--> Tuple is a collection of python objects much like lists. Values of a tuples are seprated by commas. The main characteristics are:
+           a) It is immutable sequence in python.
+           b) It is define under parenthesis ().
+           c) It can store any type of elements
+
+Sets:--> A set is an unorderd collection of unique elements without duplicates. 
+         Set is mutable and it is define under curly brackets{}.
+
+Dictianary:-->Dictianary is unordered collection. It store values in keys and values form. The sequence of such key and value pairs is seprated by commas.
+              The pairs are called items. All these items are enclosed in curly brackets {}. A colon seprate a key and its value. 
+              Dictianary objects are mutable.
+
+12. Are strings mutable in python? Suppose you have a string “I+Love+Python”, write a small code to replace ‘+’ with space in python.
+
+Answer) No strings are not mutable. It is immutable means once the string is created it's values cannot be changed or modified.
+
+       str1 = "I+LOVE+PYTHON"
+       str2 = str1.replace("+"," ")
+       print(str2)
+
+13. What does the function ord() do in python? Explain with example. Also, write down the function for getting the datatype of a variable in python.
+
+Answer) ord() is a built in function in python to return the ASCII value for a given character.
+        Example: ord('A') #Return ASCII value of character 'A'
+                Output: 65
+                
+                ord('a') #Return ASCII value of character 'a'
+                Output: 97
+    
+       To check the type of any variable datatype, we can use type() function. It will return the type of mentioned variable data type.      
