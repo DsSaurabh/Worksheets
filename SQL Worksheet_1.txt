@@ -1,0 +1,120 @@
+Q1 and Q2 have one or more correct answer. Choose all the correct option to answer your question.
+
+1. Which of the following is/are DDL commands in SQL?
+A) Create
+D) ALTER
+
+2. Which of the following is/are DML commands in SQL?
+A) Update 
+B) Delete
+C) Select
+
+Q3 to Q10 have only one correct answer. Choose the correct option to answer your question.
+
+3. Full form of SQL is:
+B) Structured Query Language
+
+4. Full form of DDL is:
+B) Data Definition Language
+
+5. DML is:
+A) Data Manipulation Language
+
+6. Which of the following statements can be used to create a table with column B int type and C float type?
+C) Create Table A (B int,C float)
+
+7. Which of the following statements can be used to add a column D (float type) to the table A created above?
+B) Alter Table A ADD COLUMN D float
+
+8. Which of the following statements can be used to drop the column added in the above question?
+B) Alter Table A Drop Column D
+
+9. Which of the following statements can be used to change the data type (from float to int ) of the column D of table A created in above questions?
+B) Alter Table A Alter Column D int
+
+10. Suppose we want to make Column B of Table A as primary key of the table. By which of the following statements we can do it?
+A) Alter Table A Add Constraint Primary Key B
+
+Q11 to Q15 are subjective answer type questions, Answer them briefly.
+
+11. What is data-warehouse?
+Answer) Data warehouse is a system used for reporting and data analysis and it is considered a core component of business intelligence.
+        Data warehouse are central repositories of integrated data from one or more disprate souces. They store current and historical data in one single place that
+        are used for creating analytical reports for workers throughout the enterprise.
+        It is also knowm as Enterprise data warehouse (EDW).
+
+12. What is the difference between OLTP VS OLAP?
+Answer) OLTP(Online transcation Processing):-->An OLTP system captures and maintains transaction data in a database. Each transaction involves individual database 
+        records made up of multiple fields or columns. Examples include banking and credit card activity or retail checkout scanning.
+
+        In OLTP, the emphasis is on fast processing, because OLTP databases are read, written, and updated frequently. If a transaction fails, built-in system logic 
+        ensures data integrity.
+
+        OLAP(Online Analytical Processing):-->OLAP applies complex queries to large amounts of historical data, aggregated from OLTP databases and other sources,
+        for data mining, analytics, and business intelligence projects. In OLAP, the emphasis is on response time to these complex queries. Each query involves one
+        or more columns of data aggregated from many rows. 
+
+        Examples include year-over-year financial performance or marketing lead generation trends. OLAP databases and data warehouses give analysts and 
+        decision-makers the ability to use custom reporting tools to turn data into information. Query failure in OLAP does not interrupt or delay transaction
+        processing for customers, but it can delay or impact the accuracy of business intelligence insights.
+
+        ETL: the force that joins OLTP and OLAP
+        The data from one or more OLTP databases is ingested into OLAP systems through a process called extract, transform, load (ETL). With an ETL tool, users can
+        collect data from several sources and send it to a destination, such as an OLAP data warehouse, where it is queried by analytics and business intelligence 
+        tools for insights.
+
+OLTP vs. OLAP: side-by-side comparison
+OLTP is operational, while OLAP is informational. A glance at the key features of both kinds of processing illustrates their fundamental differences, and how they
+work together.
+
+
+                                         OLTP	                                     OLAP
+Characteristics-- Handles a large number of small transactions	           Handles large volumes of data with complex queries
+Query types---	  Simple standardized queries	                           Complex queries
+Operations---	  Based on INSERT, UPDATE, DELETE commands	           Based on SELECT commands to aggregate data for reporting
+Response time---  Milliseconds	                                           Seconds, minutes, or hours depending on the amount of data to process
+Design---	  Industry-specific, such as retail, manufacturing,	   Subject-specific, such as sales, inventory, or marketing
+                  or banking.
+Source---	  Transactions	                                           Aggregated data from transactions
+Purpose---	  Control and run essential business operations in real	   Plan, solve problems, support decisions, discover hidden insights
+                  time.
+Data updates---	  Short, fast updates initiated by user	                   Data periodically refreshed with scheduled, long-running batch jobs
+Space requirements--Generally small if historical data is archived	   Generally large due to aggregating large datasets
+Backup and recovery--Regular backups required to ensure business           Lost data can be reloaded from OLTP database as needed in lieu of regular backups
+                     continuity and meet legal and governance requirements	
+Productivity---	    Increases productivity of end users	                   Increases productivity of business managers, data analysts, and executives
+Data view---	   Lists day-to-day business transactions	           Multi-dimensional view of enterprise data
+User examples---   Customer-facing personnel, clerks, online shoppers	   Knowledge workers such as data analysts, business analysts, and executives
+Database design--- Normalized databases for efficiency	                   Denormalized databases for analysis
+
+13. What are the various characteristics of data-warehouse?
+Answer)There are basic features that define the data in the data warehouse that include subject orientation, data integration, time-variant, nonvolatile data,
+       and data granularity.
+
+Subject-oriented-->Unlike the operational systems, the data in the data warehouse revolves around subjects of the enterprise. Subject orientation can be really
+                   useful for decision making. Gathering the required objects is called subject-oriented.
+
+Integrated-->The data found within the data warehouse is integrated. Since it comes from several operational systems, all inconsistencies must be removed. 
+             Consistencies include naming conventions, measurement of variables, encoding structures, physical attributes of data, and so forth.
+
+Time-variant-->While operational systems reflect current values as they support day-to-day operations, data warehouse data represents data over a long time horizon
+              (up to 10 years) which means it stores historical data. It is mainly meant for data mining and forecasting.
+
+Nonvolatile-->The data in the data warehouse is read-only, which means it cannot be updated, created, or deleted.
+
+Summarized-->In the data warehouse, data is summarized at different levels. The user may start looking at the total sale units of a product in an entire region. 
+             Then the user looks at the states in that region. Finally, they may examine the individual stores in a certain state. Therefore, typically, the 
+             analysis starts at a higher level and moves down to lower levels of details.
+
+14. What is Star-Schema?
+Answer) Star-Schema is the simplest style of the data mart schema and it is approach most widely used to develop datawarehouse and dimentional data marts.
+        The star-schema consist of one or more fact tables referencing any number of dimensional tables.
+
+The star schema separates business process data into facts, which hold the measurable, quantitative data about a business, and dimensions which are descriptive
+attributes related to fact data. Examples of fact data include sales price, sale quantity, and time, distance, speed and weight measurements. Related dimension
+attribute examples include product models, product colors, product sizes, geographic locations, and salesperson names.
+
+15. What do you mean by SETL?
+Answer) SETL stands for Set Theory as  a language or Set Language. It is a high-level programming language that is based on mathematical theory of sets.
+        It is interpreted language with a syntax that is resembles C and in many cases similar to Perl. In SETL every statement is terminated by semicolon.
+        In SETL variables names are case-insensitive and are automatically determined by their last assighment.
