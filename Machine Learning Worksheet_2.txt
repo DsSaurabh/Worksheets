@@ -1,0 +1,69 @@
+                                                               MACHINE LEARNING 
+                                                                
+                                                                  WORKSHEET – 2
+
+
+Ans1. (C) High R-squared value for train-set and Low R-squared value for test-set.
+
+Ans2. (B) Decision trees are highly prone to overfitting.
+
+Ans3. (C) Random Forest
+
+Ans4. (B) Sensitivity
+
+Ans5. (B) Model B
+
+Ans6. (A)Ridge and (D)Lasso
+
+Ans7. (B)Decision Tree and (C)Random Forest
+
+Ans8. (A)Pruning and (C)Restricting the max depth of the tree
+
+Ans9. (A)We initialize the probabilities of the distribution as 1/n, where n is the number of data-points 
+      (B) A tree in the ensemble focuses more on the data points on which the previous tree was not performing well
+
+ 
+Ans10.  The adjusted R-squared compares the explanatory power of regression models that contain different numbers of predictors.
+The predicted R-squared indicates how well a regression model predicts responses for new observations. This statistic helps you determine when the model fits the original data but is less capable of providing valid predictions for new observations.
+predicted R-squared by systematically removing each observation from the data set, estimating the regression equation, and determining how well the model predicts the removed observation. Like adjusted R-squared, predicted R-squared can be negative and it is always lower than R-squared.
+A key benefit of predicted R-squared is that it can prevent you from overfitting a model. As mentioned earlier, an overfit model contains too many predictors and it starts to model the random noise.Because it is impossible to predict random noise, the predicted R-squared must drop for an overfit model. If you see a predicted R-squared that is much lower than the regular R-squared, you almost certainly have too many terms in the model.
+
+
+Ans11. Ridge Regression :
+In Ridge regression, we add a penalty term which is equal to the square of the coefficient. The L2 term is equal to the square of the magnitude of the coefficients. We also add a coefficient  \lambda  to control that penalty term. In this case if  \lambda  is zero then the equation is the basic OLS else if  \lambda \, > \, 0 then it will add a constraint to the coefficient. As we increase the value of \lambda this constraint causes the value of the coefficient to tend towards zero. This leads to both low variance (as some coefficient leads to negligible effect on prediction) and low bias (minimization of coefficient reduce the dependency of prediction on a particular variable). 
+Limitation of Ridge Regression: Ridge regression decreases the complexity of a model but does not reduce the number of variables since it never leads to a coefficient been zero rather only minimizes it. Hence, this model is not good for feature reduction.
+
+Lasso Regression :
+Lasso regression stands for Least Absolute Shrinkage and Selection Operator. It adds penalty term to the cost function. This term is the absolute sum of the coefficients. As the value of coefficients increases from 0 this term penalizes, cause model, to decrease the value of coefficients in order to reduce loss. The difference between ridge and lasso regression is that it tends to make coefficients to absolute zero as compared to Ridge which never sets the value of coefficient to absolute zero.
+Limitation of Lasso Regression:
+Lasso sometimes struggles with some types of data. If the number of predictors (p) is greater than the number of observations (n), Lasso will pick at most n predictors as non-zero, even if all predictors are relevant (or may be used in the test set).
+If there are two or more highly collinear variables then LASSO regression select one of them randomly which is not good for the interpretation of data.
+
+
+Ans12. Variance Inflation Factor (VIF) is used to detect the presence of multicollinearity. Variance inflation factors (VIF) measure how much the variance of the estimated regression coefficients are inflated as compared to when the predictor variables are not linearly related.
+It is obtained by regressing each independent variable, say X on the remaining independent variables (say Y and Z) and checking how much of it (of X) is explained by these variables.
+VIF=1/(1-R2)
+Hence,
+From the formula, it is clear that higher the VIF, higher the R2 which means the variable X is collinear with Y and Z variables. If all the variables are completely orthogonal, R2 will be 0 resulting in VIF of 1.
+To run “Variance Inflation Factor” in ATH, select the dependent variable and the independent variables. All the variables should be numeric. Then specify the dependent variable.The function will result in a table with VIF values of all independent variables selected.
+From the list of variables, we select the variables with high VIF as collinear variables. But to decide which variable to select, we look at the Condition Index of the variables or the final regression coefficient table.As a thumb rule, any variable with VIF > 1.5 is avoided in a regression analysis. Sometimes the condition is relaxed to 2, instead of 1.5.
+
+
+Ans13. Among the best practices for training a Neural Network is to normalize your data to obtain a mean close to 0. Normalizing the data generally speeds up learning and leads to faster convergence. Also, the (logistic) sigmoid function is hardly ever used anymore as an activation function in hidden layers of Neural Networks, because the tanh function (among others) seems to be strictly superior.
+While this might not be immediately evident, there are very similar reasons for why this is the case. The tanh function is quite similar to the logistic sigmoid. The main difference, however, is that the tanh function outputs results between -1 and 1, while the sigmoid function outputs values that are between 0 and 1 — therefore they are always positive.
+
+
+Ans14. A well-fitting regression model results in predicted values close to the observed data values. The mean model, which uses the mean for every predicted value, generally would be used if there were no informative predictor variables. The fit of a proposed regression model should therefore be better than the fit of the mean model.
+Three statistics are used in Ordinary Least Squares (OLS) regression to evaluate model fit: R-squared, the overall F-test, and the Root Mean Square Error (RMSE). All three are based on two sums of squares: Sum of Squares Total (SST) and Sum of Squares Error (SSE). SST measures how far the data are from the mean, and SSE measures how far the data are from the model’s predicted values. Different combinations of these two values provide different information about how the regression model compares to the mean model.
+
+Ans15. From the following confusion matrix calculate sensitivity, specificity, precision, recall and accuracy
+Actual/Predicted	True	False
+True			1000	50
+False			250	1200
+
+Sensitivity = TP / FN+TP = 1000/(1000+50) = 0.95
+Specificity = TN/FP+TN = 1200/(250+1200)= 0.83
+Precision = TP/TP+FP = 1000/(1000+250)= 0.8
+Recall = TP / FN+TP = 1000/(50+1000)= 0.95
+accuracy= (TP+TN)/(TP+TN+FP+FN)= (1000+1200)/(1000+1200+250+50)= 0.88
+
