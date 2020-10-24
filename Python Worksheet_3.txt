@@ -1,0 +1,23 @@
+                                    WORKSHEET 3
+
+                                      PYTHON
+
+1-No option gives value error.
+
+2-(c)
+
+3-(b)
+
+4-(a)
+
+5-(c)
+
+6-(a)
+
+7-(b)
+
+8-(b)
+
+9-(c),(d)
+
+10-(b),(c),(d)
