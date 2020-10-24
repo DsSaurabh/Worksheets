@@ -1,0 +1,77 @@
+                                           MACHINE LEARNING
+
+                                            WORKSHEET – 5
+
+1-(d)
+
+2-(a)
+
+3-(c)
+
+4-(c)
+
+5-(a)
+
+6-(b)
+
+7-(c)
+
+8-(d),(a)
+
+9-(b),(d)
+
+10-(a),(c)
+
+Answer11- One-Hot-Encoding has the advantage that the result is binary rather than ordinal and that everything sits in an orthogonal vector space. 
+The disadvantage is that for high cardinality, the feature space can really blow up quickly and you start fighting with the curse of dimensionality.
+Also Where  For categorical variables where ordinal relationship exists, the one hot encoding is not enough. We have to use Label Encoder for ordinal data.
+
+Answer12- Resampling Techniques
+
+1  Random Under-Sampling
+Random Undersampling aims to balance class distribution by randomly eliminating majority class examples.  This is done until the majority and minority class
+instances are balanced out.
+
+2  Random Over-Sampling
+Over-Sampling increases the number of instances in the minority class by randomly replicating them in order to present a higher representation of the minority 
+class in the sample.
+
+3  Cluster-Based Over Sampling
+In this case, the K-means clustering algorithm is independently applied to minority and majority class instances. This is to identify clusters in the dataset. 
+Subsequently, each cluster is oversampled such that all clusters of the same class have an equal number of instances and all classes have the same size. 
+
+4  Informed Over Sampling: Synthetic Minority Over-sampling Technique for imbalanced data
+This technique is followed to avoid overfitting which occurs when exact replicas of minority instances are added to the main dataset. A subset of data is taken
+from the minority class as an example and then new synthetic similar instances are created. These synthetic instances are then added to the original dataset. 
+The new dataset is used as a sample to train the classification models. 
+
+5  Modified synthetic minority oversampling technique (MSMOTE) for imbalanced data
+It is a modified version of SMOTE. SMOTE does not consider the underlying distribution of the minority class and latent noises in the dataset. To improve the 
+performance of SMOTE a modified method MSMOTE is used.
+
+Answer13-The key difference between ADASYN and SMOTE is that the former uses a density distribution, as a criterion to automatically decide the number of 
+synthetic samples that must be generated for each minority sample by adaptively changing the weights of the different minority samples to compensate for the skewed.
+
+Answer14- GridSearchCV is a library function that is a member of sklearn's model_selection package. It helps to loop through predefined hyperparameters and fit your
+ estimator (model) on your training set. So, in the end, you can select the best parameters from the listed hyperparameters. 
+
+For very large dataset we cannot use GridSearchCV because it takes too much time although you can use RandomizeSearchCV.
+
+Answer15-The various metrics used to evaluate the results of the prediction are : Mean Squared Error(MSE) Root-Mean-Squared-Error(RMSE). Mean-Absolute-Error(MAE) 
+R² or Coefficient of Determination.
+
+Mean Squared Error: MSE or Mean Squared Error is one of the most preferred metrics for regression tasks. It is simply the average of the squared difference 
+between the target value and the value predicted by the regression model. As it squares the differences, it penalizes even a small error which leads to 
+over-estimation of how bad the model is. It is preferred more than other metrics because it is differentiable and hence can be optimized better.
+
+Root Mean Squared Error: RMSE is the most widely used metric for regression tasks and is the square root of the averaged squared difference between the target
+value and the value predicted by the model. It is preferred more in some cases because the errors are first squared before averaging which poses a high penalty
+on large errors. This implies that RMSE is useful when large errors are undesired.
+
+Mean Absolute Error: MAE is the absolute difference between the target value and the value predicted by the model. The MAE is more robust to outliers and does not
+penalize the errors as extremely as mse. MAE is a linear score which means all the individual differences are weighted equally. It is not suitable for applications 
+where you want to pay more attention to the outliers.
+
+R² Error: Coefficient of Determination or R² is another metric used for evaluating the performance of a regression model. The metric helps us to compare our current
+model with a constant baseline and tells us how much our model is better. The constant baseline is chosen by taking the mean of the data and drawing a line at the
+mean. R² is a scale-free score that implies it doesn't matter whether the values are too large or too small, the R² will always be less than or equal to 1.
