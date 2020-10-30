@@ -1,0 +1,35 @@
+
+
+                                                    MACHINE LEARNING 
+                                                      WORKSHEET 6
+
+
+
+Ans1. (A) Yes 
+
+
+Ans2. (A) Red
+
+
+Ans3. (B) They cannot be used when the data is not completely linearly separable while allowing no errors
+
+
+Ans4. (D) All of the above
+
+
+Ans5. (B) No
+
+
+Ans6. (C) They allow some degree of errors or misclassification
+      (D) They can be used in case data is not completely linearly separable
+
+Ans7. (D) All of the above
+
+
+Ans8. (B) We have to first convert the whole data in to the higher dimensional space before applying the kernel function
+
+
+Ans9. (C)  It is a model trained using supervised learning. It can be used for classification and regression.
+
+
+Ans10. (D) All of the above
