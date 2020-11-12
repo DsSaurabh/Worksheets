@@ -1,0 +1,36 @@
+                                                               WEB SCRAPING 
+                                                                WORKSHEET 4
+
+1-(c)
+
+2-(c)
+
+3-(b)
+
+4-(a),(b)
+
+5-(b),(c)
+
+6-(a)
+
+7-(a),(b),(d)
+
+8-(c)
+
+9-(b)
+
+10-(d)
+
+11-(a),(c)
+
+12-(d)
+
+13-(c)
+
+14-(a)
+
+15- find(): Gets the first tag of the incoming HTML object that satisfies the condition and returns. A function of a label group or a single label.
+       Prototype: find(tag, atributes, recursive, text, keywords)
+
+findAll(): Get all the conditions of the incoming HTML object and return it.
+Prototype: findAll(tag, atributes, recursive, text, limit, keywords)
