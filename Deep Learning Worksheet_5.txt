@@ -1,0 +1,41 @@
+                                              DEEP LEARNING 
+                                               WORKSHEET 5
+
+1-(D)
+
+2-(B)
+
+3-(D)
+
+4-(A)
+
+5-(B)
+
+6-(A)
+
+7-(D)
+
+8-(C)
+
+9-(A), (C), (D)
+
+10-(C), (D)
+
+11-Convex optimization- Convex optimization is a subfield of mathematical optimization that studies the problem of minimizing convex functions over convex sets.
+                        Many classes of convex optimization problems admit polynomial-time algorithms, whereas mathematical optimization is in general NP-hard.
+
+Non-Convex optimization-A non-convex optimization problem is any problem where the objective or any of the constraints are non-convex, as pictured below. Such a
+                        problem may have multiple feasible regions and multiple locally optimal points within each region.
+
+12-Saddle point- When we optimize neural networks or any high dimensional function, for most of the trajectory we optimize, the critical points(the points where the
+                 derivative is zero or close to zero) are saddle points. Saddle points, unlike local minima, are easily escapable."
+
+13-From this it's clear that the difference between NAG and classical momentum is that NAG puts more weight on recent gradients: in fact, it gives zero weight to the
+   first gradient descent direction after the first iteration, so the second step also be a pure gradient descent step, but with an extra big step size of (1+µ) .
+
+14-The aim of weight initialization is to prevent layer activation outputs from exploding or vanishing during the course of a forward pass through a deep neural
+   network. If either occurs, loss gradients will either be too large or too small to flow backwards beneficially, and the network will take longer to converge, if
+   it is even able to do so at all.
+
+15-We define Internal Covariate Shift as the change in the distribution of network activations due to the change in network parameters during training. In neural
+   networks, the output of the first layer feeds into the second layer, the output of the second layer feeds into the third, and so on.
