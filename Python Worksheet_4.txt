@@ -1,0 +1,66 @@
+﻿
+
+
+Ans1. (B) len()
+
+Ans2. (C) compiled then interpreted 
+
+Ans3. (B) [1,2,2,1]
+
+Ans4. (D) [60,30]
+
+Ans5. (C) [ : :-1] 
+
+Ans6. (B) Meena
+
+Ans7. (C)  [“World Hello ”, “Python Hello ”, “World Adios ”, “Python Adios ”]
+
+Ans8. (A) 4 
+
+Ans9. (A), (B), (D)
+
+Ans10. (A),(B) and (D)
+
+Ans11.(a) Interpreter translates just one statement of the program at a time into machine code.   Compiler scans the entire program and translates the whole of it into
+                                                                                                  machine code at once.
+
+(b) An interpreter takes very less time to analyze the source code. However, the overall         A compiler takes a lot of time to analyze the source code. However, 
+    time to execute the process is much slower.                                                  the overall time taken to execute the process is much faster.
+
+(c) An interpreter does not generate an intermediary code. Hence, an interpreter is highly      A compiler always generates an intermediary object code. It will need 
+    efficient in terms of its memory.                                                           further linking. Hence more memory is needed.
+
+(d) Keeps translating the program continuously till the first error is confronted. If any      A compiler generates the error message only after it scans the 
+error is spotted, it stops working and hence debugging becomes easy.                           complete program and hence debugging is relatively harder while working with a compiler.
+
+(e) Interpreters are used by programming languages like Ruby and Python for example.           Compliers are used by programming languages like C and C++ for example.
+
+Ans12. PYTHONPATH is an environment variable which you can set to add additional directories where python will look for modules and packages. For most installations,
+ you should not set these variables since they are not needed for Python to run. Python knows where to find its standard library.
+The only reason to set PYTHONPATH is to maintain directories of custom Python libraries that you do not want to install in the global default location (i.e., the
+ site-packages directory).
+
+Ans13. Python provides three methods that can be used to trim whitespaces from the string object.
+
+strip(): returns a new string after removing any leading and trailing whitespaces including tabs (\t).
+rstrip(): returns a new string with trailing whitespace removed. It’s easier to remember as removing white spaces from “right” side of the string.
+lstrip(): returns a new string with leading whitespace removed, or removing whitespaces from the “left” side of the string.
+
+
+s1 = '  abc  '
+
+print(f'String =\'{s1}\'')
+
+print(f'After Removing Leading Whitespaces String =\'{s1.lstrip()}\'')
+
+print(f'After Removing Trailing Whitespaces String =\'{s1.rstrip()}\'')
+
+print(f'After Trimming Whitespaces String =\'{s1.strip()}\'')
+
+OUTPUT-
+
+
+String ='  abc  '
+After Removing Leading Whitespaces String ='abc  '
+After Removing Trailing Whitespaces String ='  abc'
+After Trimming Whitespaces String ='abc'
