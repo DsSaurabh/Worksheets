@@ -1,0 +1,70 @@
+                                                                       WORKSHEET
+                                                                    DEEP LEARNING
+
+1-(B)
+
+2-(D)
+
+3-(C)
+
+4-(A)
+
+5-(A)
+
+6-(C)
+
+7-(D)
+
+8-(A)
+
+9-(A), (B), (D)
+
+10-(B), (D)
+
+11-Deep learning is a subset of machine learning where artificial neural networks, algorithms inspired by the human brain, learn from large amounts of data.Deep 
+   learning allows machines to solve complex problems even when using a data set that is very diverse, unstructured and inter-connected.
+
+12-Reinforcement learning is an area of machine learning concerned with how software agents ought to take actions in an environment in order to maximize the notion
+   of cumulative reward. Reinforcement learning is one of three basic machine learning paradigms, alongside supervised learning and unsupervised learning.
+
+13-S.NO.	                        MACHINE LEARNING	                                 DEEP LEARNING
+    1.	Machine Learning is a superset of Deep Learning.	              Deep Learning is a subset of Machine Learning.
+    2.The data represented in Machine Learning is quite different as          The data representation is used in Deep Learning is quite different as it uses neural 
+      compared to Deep Learning as it uses structured data                    networks(ANN).
+
+    3.Machine Learning is an evolution of AI.                                 Deep Learning is an evolution to Machine Learning. Basically it is how deep is the machine learning.
+
+    4-	Machine learning consists of thousands of data points.                Big Data: Millions of data points.
+
+    5.	Outputs: Numerical Value, like classification of score.              Anything from numerical values to free-form elements, such as free text and sound.
+
+    6-Algorithms are detected by data analysts to examine specific           Algorithms are largely self-depicted on data analysis once they’re put into production.
+       variables in data sets.
+
+14-A neural network is an interconnected system of perceptrons, so it is safe to say perceptrons are the foundation of any neural network. Perceptrons can be viewed
+   as building blocks in a single layer in a neural network, made up of four different parts:
+
+1-Input Values or One Input Layer
+2-Weights and Bias
+3-Net sum
+4-Activation function
+
+A neural network, which is made up of perceptrons, can be perceived as a complex logical statement (neural network) made up of very simple logical statements 
+(perceptrons); of “AND” and “OR” statements. A statement can only be true or false, but never both at the same time. The goal of a perceptron is to determine from 
+the input whether the feature it is recognizing is true, in other words whether the output is going to be a 0 or 1. A complex statement is still a statement, and its
+output can only be either a 0 or 1.
+
+15-                                        ARTIFICIAL INTELLIGENCE	                         MACHINE LEARNING
+
+1- AI stands for Artificial intelligence, where intelligence is defined acquisition of    ML stands for Machine Learning which is defined as the acquisition of knowledge or skill.
+   knowledge intelligence is defined as a ability to acquire and apply knowledge.
+
+2- The aim is to increase chance of success and not accuracy.                             The aim is to increase accuracy, but it does not care about success.
+
+3- It work as a computer program that does smart work.                                    It is a simple concept machine takes data and learn from data.
+
+4- The goal is to simulate natural intelligence to solve complex problem.                 The goal is to learn from data on certain task to maximize the performance of machine on this task.
+
+5- AI is decision making.                                                                 ML allows system to learn new things from data.
+
+6- AI leads to intelligence or wisdom.                                                    ML leads to knowledge.
