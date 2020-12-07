@@ -1,0 +1,25 @@
+                                                              PYTHON 
+                                                            WORKSHEET 5
+
+1-(B)
+
+2-(D)
+
+3-(B)
+
+4-(D)
+
+5-(C)
+
+6-(D)
+
+7-(C)
+
+8-(C)
+
+9-(D)
+
+10-(B)
+
+11-Some more differences are: List can be 2-D whereas a set can't. As list are ordered (IE. have serial number) list are comparatively slow to execute whereas sets
+   are fast.
