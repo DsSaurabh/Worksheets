@@ -1,0 +1,50 @@
+
+
+                                               DEEP LEARNING – WORKSHEET 4
+
+
+Ans1. (A)Once we have the pooled feature map, this component transforms the information into a vector. It's the
+ input we need to get on with Artificial Neural Networks.
+
+
+Ans2. (B)Little dependence on pre-processing, decreasing the needs of human effort developing its functionalities.
+
+Ans3. (B)False
+
+Ans4. (B)3 – 5 – 1 – 2 – 4
+
+Ans5. (A)
+
+Ans6. (B) 
+
+Ans7. (D)13×13
+
+Ans8. (B) 
+
+Ans9. 
+
+Ans10. (A)and (B) 
+
+Ans11. CNN architecture is inspired by the organization and functionality of the visual cortex and designed to mimic the connectivity pattern of neurons within the human brain. The neurons within a CNN are split into a three-dimensional structure, with each set of neurons analyzing a small region or feature of the image.
+
+
+Ans12. A Convolutional neural network (CNN) is a neural network that has one or more convolutional layers and are used mainly for image processing, classification, segmentation and also for other auto correlated data. A convolution is essentially sliding a filter over the input.
+Convolution is the process of adding each element of the image to its local neighbors, weighted by the kernel. This is related to a form of mathematical convolution. The matrix operation being performed—convolution—is not traditional matrix multiplication, despite being similarly denoted by *.
+
+
+Ans13. Max pooling:- The maximum pixel value of the batch is selected. Max pooling is a sample-based discretization process. The objective is to down-sample an input representation (image, hidden-layer output matrix, etc.), reducing its dimensionality and allowing for assumptions to be made about features contained in the sub-regions binned.
+Average pooling:- The average value of all the pixels in the batch is selected. Average pooling involves calculating the average for each patch of the feature map. This means that each 2×2 square of the feature map is down sampled to the average value in the square.
+
+
+Ans14. Padding is a term relevant to convolutional neural networks as it refers to the amount of pixels added to an image when it is being processed by the kernel of a CNN. For example, if the padding in a CNN is set to zero, then every pixel value that is added will be of value zero.
+Padding is simply a process of adding layers of zeros to our input images so as to avoid the problems mentioned above. This prevents shrinking as, if p = number of layers of zeros added to the border of the image, then our (n x n) image becomes (n + 2p) x (n + 2p) image after padding. There are couple of reasons padding is important: It's easier to design networks if we preserve the height and width and don't have to worry too much about tensor dimensions when going from one layer to another because dimensions will just work.
+
+
+Ans15. There are three types of layers in a convolutional neural network: convolutional layer, pooling layer, and fully connected layer. Each of these layers has different parameters that can be optimized and performs a different task on the input data.
+
+Convolutional layers:- Convolutional layers are the layers where filters are applied to the original image, or to other feature maps in a deep CNN. This is where most of the user-specified parameters are in the network. The most important parameters are the number of kernels and the size of the kernels.
+
+Pooling layers:- Pooling layers are similar to convolutional layers, but they perform a specific function such as max pooling, which takes the maximum value in a certain filter region, or average pooling, which takes the average value in a filter region. These are typically used to reduce the dimensionality of the network.
+
+Fully connected layers:- Fully connected layers are placed before the classification output of a CNN and are used to flatten the results before classification. This is similar to the output layer of an MLP.
+
