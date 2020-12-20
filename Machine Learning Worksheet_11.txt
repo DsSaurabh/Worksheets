@@ -1,0 +1,65 @@
+                                   MACHINE LEARNING – WORKSHEET 11
+
+                                        (LINEAR REGRESSION)
+
+1-(B)
+
+2-(B)
+
+3-(A)
+
+4-(C)
+
+5-(B)
+
+6-(A)
+
+7-(B)
+
+8-(C)
+
+9-(B), (D)
+
+10-(A), (B), (C),
+
+11-(A), (B)
+
+12-R2 shows how well terms (data points) fit a curve or line. Adjusted R2 also indicates how well terms fit a curve or line, but adjusts for the number of terms in
+   a model. If you add more and more useless variables to a model, adjusted r-squared will decrease.
+
+13- A cost function is a measure of how wrong the model is in terms of its ability to estimate the relationship between X and y. This is typically expressed as a
+   difference or distance between the predicted value and the actual value. The cost function (you may also see this referred to as loss or error.)
+
+14- SST: The sum of squares total, denoted SST, is the squared differences between the observed dependent variable and its mean. You can think of this as the
+    dispersion of the observed variables around the mean – much like the variance in descriptive statistics.
+
+                  SST= summation(Yi-Y_hat)**2
+
+It is a measure of the total variability of the dataset.
+
+Side note: There is another notation for the SST. It is TSS or total sum of squares.
+
+SSR: The second term is the sum of squares due to regression, or SSR. It is the sum of the differences between the predicted value and the mean of the dependent 
+     variable. Think of it as a measure that describes how well our line fits the data.
+ 
+                 SSR = summation(Y_hat- Y_bar)**2
+
+If this value of SSR is equal to the sum of squares total, it means our regression model captures all the observed variability and is perfect. Once again, we have
+to mention that another common notation is ESS or explained sum of squares.
+
+SSE: The last term is the sum of squares error, or SSE. The error is the difference between the observed value and the predicted value. We usually want to minimize
+ the error. The smaller the error, the better the estimation power of the regression. Finally, I should add that it is also known as RSS or residual sum of squares.
+ Residual as in: remaining or unexplained.
+
+15-The evaluation metrics used to evaluate a regression model are as follows:
+R2 Score: Also known as coefficient of determination. R2 signifies that what fraction of total variance is explained by the best fit line.
+
+Adjusted R2 Score: Adjusted R2 and R2 both represent that how well the model fits the data points. But adjusted R2 penalizes the model for using more features.
+In case we increase the number of features in training data the R2 will increase but adjusted R2 will only increase if the new feature adds value to our model. 
+Due tothis reason adjusted R2 is considered as a better evaluation metric than R2. Adjusted R2 is always less than or equal to R2.
+
+Mean Squared Error(MSE): Mean Squared error is the mean of all the squares of the distances of each data point from its predictions by the best fit line.
+
+Root Mean Squared Error(RMSE): is the standard deviation of the residuals (prediction errors). Residuals are a measure of how far from the regression line data
+points are; RMSE is a measure of how spread out these residuals are. In other words, it tells you how concentrated the data is around the line of best fit. It is 
+nothing but square root of MSE.
